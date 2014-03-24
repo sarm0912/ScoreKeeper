@@ -1,0 +1,62 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tittle_bkg"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/title_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/title" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.90" >
+
+        <Button
+            android:id="@+id/timer_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/scorekeeper_btn"
+            android:layout_below="@+id/scorekeeper_btn"
+            android:layout_marginTop="27dp"
+            android:onClick="Timer_onClick"
+            android:text="@string/time_title" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/timer_btn"
+            android:layout_alignBottom="@+id/timer_btn"
+            android:layout_alignLeft="@+id/dice_btn"
+            android:text="Button" 
+            android:onClick="Test_onClick"/>
+
+        <Button
+            android:id="@+id/dice_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/timer_btn"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/scorekeeper_btn"
+            android:onClick="Dice_onClick"
+            android:text="@string/dice_title" />
+
+        <Button
+            android:id="@+id/scorekeeper_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="87dp"
+            android:layout_marginTop="36dp"
+            android:onClick= "Score_onClick"
+            android:text="@string/scorekeep_title" />
+
+    </RelativeLayout>
+
+</TableLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tittle_bkg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice_title" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+<TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+    
+            
+         <TextView
+             android:id="@+id/dice_1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="10dp"
+             android:text="Roll D4"
+             android:textSize="40sp" />
+
+         <Button
+             android:id="@+id/singleRoll_btn"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+             android:layout_marginLeft="75dp"
+             android:onClick="Four_onClick"
+             android:text="@string/roll_dice" />
+        
+        </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+         
+         <TextView
+             android:id="@+id/dice_2"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="10dp"
+             android:text="Roll D6"
+             android:textSize="40sp" />
+
+         <Button
+             android:id="@+id/doubleRoll_btn"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+             android:layout_marginLeft="75dp"
+             android:onClick="Six_onClick"
+             android:text="@string/roll_dice" />
+        
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+         
+         <TextView
+             android:id="@+id/dice_3"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="10dp"
+             android:text="Roll D8"
+             android:textSize="40sp" />
+
+         <Button
+             android:id="@+id/D_Eight_btn"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+             android:layout_marginLeft="75dp"
+             android:onClick="Eight_onClick"
+             android:text="@string/roll_dice" />
+        
+    </TableRow>
+    
+       <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+         
+         <TextView
+             android:id="@+id/dice_4"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="10dp"
+             android:text="Roll D10"
+             android:textSize="40sp" />
+
+         <Button
+             android:id="@+id/D_Ten_btn"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+             android:layout_marginLeft="75dp"
+             android:onClick="Ten_onClick"
+             android:text="@string/roll_dice" />
+        
+    </TableRow>
+           <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+         
+         <TextView
+             android:id="@+id/dice_5"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="10dp"
+             android:text="Roll D12"
+             android:textSize="40sp" />
+
+         <Button
+             android:id="@+id/D_Twelve_btn"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+             android:layout_marginLeft="75dp"
+             android:onClick="Twelve_onClick"
+             android:text="@string/roll_dice" />
+        
+    </TableRow>
+     
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+         
+         <TextView
+             android:id="@+id/dice_6"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="10dp"
+             android:text="Roll D20"
+             android:textSize="40sp" />
+
+         <Button
+             android:id="@+id/D_Twenty_btn"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+             android:layout_marginLeft="75dp"
+             android:onClick="Twenty_onClick"
+             android:text="@string/roll_dice" />
+        
+    </TableRow>
+
+      <Button
+          android:id="@+id/All_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:onClick="All_onClick"
+          android:text="Roll All" />
+    
+</TableLayout>
+</LinearLayout>

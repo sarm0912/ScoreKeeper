@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tittle_bkg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice_title" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+		<TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+			<EditText
+			    android:id="@+id/Die_countText"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="60dp"
+			    android:ems="10"
+			    android:inputType="number"
+			    android:text="enter number of sides " >
+
+			</EditText>
+        
+        </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+         
+         <TextView
+             android:id="@+id/rollValue_text"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="100dp"
+             android:layout_marginLeft="60dp"
+             android:layout_marginTop="60dp"
+             android:text=""
+             android:textSize="40sp" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/Roll_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="Roll2_onClick"
+        android:text="Roll Dice" />
+    
+</TableLayout>
+</LinearLayout>
